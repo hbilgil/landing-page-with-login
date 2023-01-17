@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100;800&display=swap');
 
 /*GENERAL STYLING*/
 
@@ -53,7 +54,7 @@ li {
     list-style: none;
 }
 
-a {
+li a {
     text-decoration: none;
     color: white;
     font-family: 'Sofia Sans', sans-serif;
@@ -61,17 +62,17 @@ a {
     font-weight: 700;
 }
 
-a:hover {
+li a:hover {
     text-decoration: none;
     opacity: 0.7;
     
 }
 
-a:active {
+li a:active {
     text-decoration: none;
 }
 
-a:visited {
+li a:visited {
     text-decoration: none;
 }
 
@@ -92,7 +93,6 @@ a:visited {
 
 .search input:focus {
    border: 2px solid orange;
-    
 }
 
 .search button {
@@ -109,6 +109,66 @@ a:visited {
 
 .search button:focus {
     border: 2px solid orange;
+}
+
+/*MAIN SECTION*/
+
+main {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.left-sec {
+    width: 55%;
+    margin-top: 70px;
+    padding: 1.5rem;
+    color: white;
+    font-family: 'Sofia Sans Condensed';
+}
+
+.left-sec h1 {
+    font-size: 2.5rem;
+}
+
+.left-sec h1 span {
+    color: rgb(65, 238, 65);
+    font-size: 6.25rem;
+    font-weight: 800;
+}
+
+.left-sec p {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.left-sec a {
+    display: block;
+    text-decoration: none;
+    width: 9rem;
+    height: 3rem;
+    background-color: rgb(65, 238, 65);
+    box-shadow: #121FCF 3px 3px 0px 1px;
+    color: black;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 20px;
+}
+
+.left-sec a:hover {
+    background-color: #121FCF;
+    box-shadow: rgb(65, 238, 65) 3px 3px 0px 1px;
+    color: white;
+    transition: all 1.4s;
+}
+
+.right-sec {
+    border: 1px solid white;
+    width: 45%;
+    margin-top: 40px;
 }
 
 /*Responsive design methods*/
@@ -136,6 +196,34 @@ a:visited {
     .search button {
         width: 30%;
     }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-sec {
+        margin-top: 0px;
+        width: 100%;
+        background-color: rgba(171, 170, 170, 0.734);
+    }
+
+    .left-sec h1 {
+        font-size: 2.3rem;
+    }
+    
+    .left-sec h1 span {
+        font-size: 5.25rem;
+    }
+    
+    .left-sec p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: black;
+    }
+
+    .right-sec {
+        width: 100%;
+    }
 }
 
 @media only screen  and (max-width: 800px) {
@@ -143,6 +231,32 @@ a:visited {
         flex-direction: column;
         gap: 20px;
         width: 50%;
+    }
+
+    .left-sec h1 {
+        font-size: 2.1rem;
+    }
+    
+    .left-sec h1 span {
+        font-size: 4.5rem;
+    }
+    
+    .left-sec p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen  and (max-width: 600px) {
+    .left-sec h1 {
+        font-size: 1.8rem;
+    }
+    
+    .left-sec h1 span {
+        font-size: 4rem;
+    }
+    
+    .left-sec p {
+        font-size: 1.1rem;
     }
 }
 
@@ -183,5 +297,17 @@ a:visited {
 
     .search {
         width: 180%;
+    }
+
+    .left-sec h1 {
+        font-size: 1.8rem;
+    }
+    
+    .left-sec h1 span {
+        font-size: 3rem;
+    }
+    
+    .left-sec p {
+        font-size: 1rem;
     }
 }
