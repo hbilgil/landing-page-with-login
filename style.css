@@ -1,0 +1,19 @@
+/*General styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*keep the entire body fixed with box sized*/
+}
+
+.main-container {
+    width: 100%;
+    background-image: url(images/metaverse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+/*Header section*/
+
