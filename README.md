@@ -18,3 +18,14 @@ The main goal of this project is to use HTML5 and CSS3 elements, rules and metho
 
 ## Project Reviews
 
+### Desktop (>1100px)
+
+![](images/desktop.gif)
+
+### Tablets (>768px)
+
+![](images/tablets.gif)
+
+### Mobile (>480px)
+
+![](images/mobile.gif)
