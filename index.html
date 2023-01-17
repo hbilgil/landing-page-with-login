@@ -33,7 +33,7 @@
                 </nav>
                 <div class="search">
                     <input type="search" id="search" placeholder="Type something">
-                    <button class="btn">Search</button>
+                    <button class="btn-search">Search</button>
                 </div>
             </div>
         </header>
@@ -42,7 +42,7 @@
                 <h1>
                     Step Into the
                     </br>
-                    <span>METAVERSE</span>:
+                    <span>METAVERSE</span>
                     </br>How The Virtual World May Change Reality
                 </h1>
                 <p>Metaverse virtual worlds are intriguing because 
@@ -57,7 +57,50 @@
                 <a href="#">Join Us</a>
             </section>
             <section class="right-sec">
-
+                <div class="displayTableCell">
+                    <div class="authBlock">
+                      <h3>Sign In</h3>
+                      <div class="formGroup">
+                        <input 
+                          type="text" 
+                          class="formControl" 
+                          placeholder="Username"
+                        />
+                      </div>
+                      <div class="formGroup">
+                        <input 
+                          type="password" 
+                          class="formControl" 
+                          placeholder="Password" 
+                        />
+                      </div>
+                      <!--calling SignIn function from authService data-->
+                      <div class="formGroup">
+                        <input 
+                          type="button" 
+                          class="btn btnPrimary" 
+                          value="Log in"
+                        />
+                      </div>
+                      <div class="formGroup">
+                        <span class="or"><span class="orInner">Or</span></span>
+                      </div>
+                      <!-- Calling GoogleAuth function from authService data-->
+                      <div class="formGroup">
+                        <input
+                          type="button" 
+                          class="btn googleBtn"
+                          value="Log in with Google"
+                        />
+                      </div>
+                      <div class="forgotPassword">
+                        <span>Forgot Password?</span>
+                      </div>
+                      <div class="redirectToLogin">
+                        <span>Don't have an account? <span class="redirect"> Sign Up</span></span>
+                      </div>
+                    </div>
+                  </div>
             </section>
         </main>
     </div>
